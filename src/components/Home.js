@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import profilePic from '../images/aleks.jpg'
-import './main.css'
+import './styles/home.css'
 
 
-export default class Main extends Component {
+export default class Home extends Component {
   render() {
     return (
       <div className="main">

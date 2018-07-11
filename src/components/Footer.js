@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import github from '../images/github.svg'
 import mail from '../images/mail.svg'
 import linked from '../images/linked2.svg'
-import './footer.css'
+import './styles/footer.css'
 
 
 export default class Footer extends Component {
