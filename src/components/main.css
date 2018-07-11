@@ -1,0 +1,9 @@
+.main {
+  min-height: calc(100vh - 70px);
+  padding: 40px 50px;
+}
+
+.profile {
+  width: 500px;
+  height: auto;
+}

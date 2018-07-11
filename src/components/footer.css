@@ -1,0 +1,17 @@
+
+
+.footer-logos {
+  padding:10px;
+  background: rgb(184, 209, 209);
+  display: flex;
+  flex-flow: row-wrap;
+  flex-shrink: 1;
+  justify-content: center;
+  align-content: center;
+}
+
+img.logo {
+  margin: 10px;
+  height: 45px;
+  width: 45px;
+}
