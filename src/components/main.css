@@ -1,9 +1,16 @@
 .main {
   min-height: calc(100vh - 70px);
   padding: 40px 50px;
+  color: rgb(94, 91, 91);
+  background-color: rgb(247, 236, 222);
 }
 
 .profile {
-  width: 500px;
+  display: block;
+  width: 200px;
   height: auto;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:50%;
 }

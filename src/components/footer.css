@@ -2,7 +2,7 @@
 
 .footer-logos {
   padding:10px;
-  background: rgb(184, 209, 209);
+  background: rgb(168, 168, 149);
   display: flex;
   flex-flow: row-wrap;
   flex-shrink: 1;
