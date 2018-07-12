@@ -20,9 +20,9 @@ class App extends Component {
           </ul>
           <div className='content'>
           <Switch>
-            <Route exact={true} path to='/' component={Home}>Home</Route>
-            <Route path to='/projects' component={Projects}>Projects</Route>
-            <Route path to='/resume' component={Resume}>Resume</Route>
+            <Route exact={true} path='/' component={Home}>Home</Route>
+            <Route path='/projects' component={Projects}>Projects</Route>
+            <Route path='/resume' component={Resume}>Resume</Route>
             </Switch>
           </div>
           <Footer />
