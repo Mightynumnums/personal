@@ -1,0 +1,11 @@
+.projects {
+  text-align: center;
+  display: flex;
+  flex-flow: column-wrap;
+  align-content: stretch;
+}
+
+.projects p {
+  margin: 20px;
+  padding:10px;
+}
