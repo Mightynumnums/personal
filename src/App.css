@@ -28,16 +28,46 @@
 } */
 
 
+body, html {
+    height: 100vh;
+  }
+
 .navigate {
+  padding: 10px;
+  width: 100%;
+  position:fixed;
+  top: 0;
+  left:0;
+  margin: 0;
   display: flex;
   flex-flow: row-wrap;
-
+  background-color: rgb(44, 43, 43);
 }
 .navigate a {
   text-decoration: none;
+  color: rgb(228, 220, 220);
 }
 
-li{
+.navigate a:hover {
+  color: rgb(189, 239, 243);
+  border-bottom: 2px solid rgb(189, 239, 243);
+
+}
+
+.navigate a:active {
+  color: rgb(237, 241, 192)
+
+}
+
+li {
 list-style: none;
-padding: 20px;
+ padding: 20px;
+} 
+
+#home {
+  flex-grow:2;
+}
+
+.bio {
+  margin-top: 100px;
 }
