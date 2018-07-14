@@ -1,8 +1,9 @@
 .main {
   min-height: calc(100vh - 70px);
+  width:auto;
   padding: 40px 50px;
   color: rgb(94, 91, 91);
-  background-color: rgb(247, 236, 222);
+  background-color: rgb(240, 237, 234);
 }
 
 .profile {

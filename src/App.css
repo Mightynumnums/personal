@@ -62,7 +62,9 @@ body, html {
 li {
 list-style: none;
  padding: 20px;
+ margin-right: 20px;
 } 
+
 
 #home {
   flex-grow:2;

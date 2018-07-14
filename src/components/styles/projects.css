@@ -1,11 +1,25 @@
-.projects {
-  text-align: center;
+#anbePortfolio {
+  margin-top: 100px;
   display: flex;
-  flex-flow: column-wrap;
-  align-content: stretch;
+  flex-direction: column;
 }
 
-.projects p {
-  margin: 20px;
-  padding:10px;
+#anbeText {
+  width: 75%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.images {
+  display: flex;
+  flex-direction: row-wrap;
+  align-self: center;
+  align-content: space-around;
+}
+
+#anbeIphone {
+  height: 200px;
+}
+#anbeComputer {
+  height: 200px;
 }

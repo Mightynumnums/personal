@@ -2,9 +2,11 @@ import React from 'react'
 import './styles/contacts.css'
 import { TextField, Button } from 'material-ui'
 
+
 const Contacts = () => {
+
   return (
-    <div id="formTop">
+    <div id="formTop" >
       <h3 id='formTag'> Hey!<br />I would love to hear from you!</h3>
       <form id="contact-form" method="POST" action="https://formspree.io/deadcookies@gmail.com">
         <TextField type="hidden" name="_subject" value="Website contact" />
@@ -14,7 +16,7 @@ const Contacts = () => {
         <TextField multiline="true" placeholder="Your message" name="message" />
         <Button id='formSubmitButton' type="submit" value="Send"> Submit </Button>
       </form>
-    </div>
+    </div >
   );
 }
 export default Contacts

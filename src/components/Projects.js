@@ -1,16 +1,21 @@
 import React from 'react'
 import './styles/projects.css'
+import anbeI from '../images/anbeI.jpg'
+import anbeL from '../images/anbeCom.jpg'
 
 const Projects = () => {
   return (
     <div className="projects">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit elit nec pellentesque interdum. Praesent sed mauris nibh. Fusce facilisis eleifend lectus. Proin pulvinar nunc non nunc vestibulum, id suscipit leo dignissim. Nullamexport default class Home
-          </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit elit nec pellentesque interdum. Praesent sed mauris nibh. Fusce facilisis eleifend lectus. Proin pulvinar nunc non nunc vestibulum, id suscipit leo dignissim. 
-          </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit elit nec pellentesque interdum. Praesent sed mauris nibh. Fusce facilisis eleifend lectus. Proin pulvinar nunc non nunc vestibulum, id suscipit leo dignissim. 
-          </p>
-    </div>
+      <div id='anbePortfolio'>
+        <p id='anbeText'>Anbe Baccam is an emerging photographer, and I really wanted to showcase his work in a simple way to allow the beauty of his photography to speak for itself, without too much destruction and noise.
+        </p>
+        <div className='images'>
+          <img src={anbeI} id='anbeIphone' alt='iphoneImage' />
+          <img src={anbeL} id="anbeComputer" alt="laptopImage" />
+        </div>
+      </div>
+
+    </div >
   );
 }
 export default Projects
