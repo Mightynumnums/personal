@@ -1,18 +1,23 @@
-#anbePortfolio {
+#anbePortfolio, #donke {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
 }
 
-#anbeText {
-  width: 75%;
-  margin-left: 0;
-  margin-right: 0;
+#anbeText, #donkeText {
+  width:auto;
+  padding: 40px 50px;
+  color: rgb(94, 91, 91);
+  background-color: rgb(240, 237, 234)
+}
+img {
+  padding: 20px;
 }
 
-.images {
+.images, .projLinks {
   display: flex;
-  flex-direction: row-wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-self: center;
   align-content: space-around;
 }
@@ -22,4 +27,10 @@
 }
 #anbeComputer {
   height: 200px;
+}
+
+.projLinks a {
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(94, 91, 91);
 }

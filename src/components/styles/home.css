@@ -1,16 +1,23 @@
-.main {
+/* .main {
   min-height: calc(100vh - 70px);
   width:auto;
   padding: 40px 50px;
   color: rgb(94, 91, 91);
   background-color: rgb(240, 237, 234);
+} */
+
+#bioText {
+  width:auto;
+  padding: 40px 50px;
+  color: rgb(94, 91, 91);
+  background-color: rgb(240, 237, 234)
 }
 
 .profile {
   display: block;
   width: 200px;
   height: auto;
-  margin-top: 60px;
+  margin-top:20px;
   margin-left: auto;
   margin-right: auto;
   border-radius:50%;
