@@ -2,7 +2,6 @@ import React from 'react'
 import profilePic from '../images/aleks.jpg'
 import './styles/home.css'
 
-
 const Home = () => {
   return (
     <div className="main">

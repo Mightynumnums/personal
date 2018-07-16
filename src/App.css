@@ -51,12 +51,10 @@ body, html {
 .navigate a:hover {
   color: rgb(189, 239, 243);
   border-bottom: 2px solid rgb(189, 239, 243);
-
 }
 
 .navigate a:active {
   color: rgb(237, 241, 192)
-
 }
 
 li {
