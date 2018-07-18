@@ -16,8 +16,8 @@ const Projects = () => {
           <img src={anbeI} id='anbeIphone' alt='iphoneImage' />
         </div>
         <div className='projLinks'>
-          <a href='https://github.com/Mightynumnums/anbe2'>GITHUB</a>
-          <a href='https://anbebaccamportfolio.herokuapp.com/'>WEBSITE</a>
+          <a className='grad1' href='https://github.com/Mightynumnums/anbe2'>GITHUB</a>
+          <a className='grad1' href='https://anbebaccamportfolio.herokuapp.com/'>WEBSITE</a>
         </div>
 
 

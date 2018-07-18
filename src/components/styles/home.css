@@ -1,7 +1,9 @@
 #bioText {
-  width:auto;
-  padding: 40px 50px;
+  width: 75%;
+  text-align: center;
   color: rgb(94, 91, 91);
+  display: block;
+  margin: 0 auto;
   background-color: rgb(240, 237, 234)
 }
 

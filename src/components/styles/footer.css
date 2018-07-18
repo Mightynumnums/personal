@@ -1,14 +1,6 @@
 
 .footer {
-  /* position: sticky;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-  border-top: 2px solid black;
-  height: 10%;
-  clear: both; */
+padding-top: 100px;
   clear: both;
   margin: 0 auto;
   position: relative;
@@ -27,6 +19,6 @@
 
 img.logo {
   margin: 10px;
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
 }
