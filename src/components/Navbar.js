@@ -6,7 +6,7 @@ import './styles/navbar.css'
 const Navbar = () => {
   return (
     <ul className='navigate'>
-      <li id='home'><NavLink to='/'>Home</NavLink></li>
+      <li id='home'><NavLink to='/home'>Home</NavLink></li>
       <li><NavLink to='/projects'>Projects</NavLink></li>
       <li><NavLink to='/resume'>Resume</NavLink></li>
       <li><NavLink to='/contacts'>Contact</NavLink></li>

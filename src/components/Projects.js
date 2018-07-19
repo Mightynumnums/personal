@@ -2,11 +2,13 @@ import React from 'react'
 import './styles/projects.css'
 import anbeI from '../images/anbeI.jpg'
 import anbeL from '../images/anbeCom.jpg'
-// import donke from '../images/donke.jpg'
+import Navbar from '../components/Navbar.js'
+import Footer from '../components/Footer.js'
 
 const Projects = () => {
   return (
     <div className="projects">
+      <Navbar />
 
       <div id='anbePortfolio'>
         <p id='anbeText'>Anbe Baccam is an emerging photographer. When I was building his site, really wanted to showcase his work in a simple way. It was important for me to let the beauty of his work to speak for itself, without too much destruction and noise.
@@ -21,8 +23,6 @@ const Projects = () => {
           <a className='grad1' href='https://github.com/Mightynumnums/anbe2'>GITHUB</a>
           <a className='grad1' href='https://anbebaccamportfolio.herokuapp.com/'>WEBSITE</a>
         </div>
-
-
 
         {/* donke project*/}
         <div id='donke'>
@@ -43,6 +43,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <Footer />
 
     </div>
   );

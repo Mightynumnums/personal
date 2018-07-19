@@ -1,16 +1,16 @@
 import React from 'react'
 import profilePic from '../images/aleks.jpg'
 import './styles/home.css'
+import Navbar from './Navbar';
+
 
 const Home = () => {
   return (
     <div className="main">
+      <Navbar />
       <div className='bio'>
-        <p id='bioText'>Hi there! I'm Aleks and I am a software developer with a keen eye for design.
-        Originally from Russia, I've been told that I have a tone and a bit of tude. None of those things are true, all I want to do is make cool pretty looking shit.
-        <br />
-          I am a fullstack JavaScript developer keen on working with excited and passionate individuals who want to get things done and are interested in making this dirty world just a little bit more beautiful and a little bit more smart.
-          </p>
+        <p>Give some description here</p>
+
         <img src={profilePic} className="profile bio" alt="selfImg" />
 
         <div className='skills'>
@@ -44,7 +44,7 @@ const Home = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

@@ -3,7 +3,7 @@
   display: block;
 }
 
-#bioText, .skills, #line {
+  .skills, #line, .welcomeMessage{
   width: 85%;
   margin: 0 auto;
   padding: 20px;
@@ -39,7 +39,6 @@
   border-radius:50%;
 }
 
-#line {
-  margin-top: 50px;
 
-}
+/* Animate text: */
+

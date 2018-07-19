@@ -1,0 +1,28 @@
+.landing {
+height: 100vh;
+text-align: center;
+padding-top: 200px;
+font-size: 2em;
+  background: rgb(149,231,237); /* Old Browsers */
+  background: -webkit-linear-gradient(top,rgb(149,231,237),rgb(86,239,161)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(top,rgb(149,231,237),rgb(86,239,161)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top,rgb(149,231,237),rgb(86,239,161)); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, rgb(149,231,237), rgb(86,239,161)); /*Standard*/
+}
+
+#main {
+  background: transparent;
+  border: 2px solid rgb(43, 41, 122);
+  border-radius: 6px;
+  padding: 10px;
+  
+}
+#main:hover {
+  background-color: aquamarine;
+  color: white;
+}
+
+
+
+
+/* <img src={background} className="backImg" alt="wallpaper" /> */

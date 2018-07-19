@@ -4,7 +4,35 @@ html {
 
 body {
   font-family: 'Assistant', sans-serif;
-display:flex;
-flex-direction: column;
-height:100vh;
+  display:flex;
+  flex-direction: column;
+  height:100vh;
 }
+
+
+
+/******* FOOTER ********/
+.footer {
+  padding-top: 50px;
+   clear: both;
+   margin: 0 auto;
+   width: 100%;
+   position: fixed;
+   bottom:0;
+   left: 0;
+ 
+ }
+ 
+ .footer-logos {
+   display: flex;
+   flex-flow: row-wrap;
+   flex-shrink: 1;
+   justify-content: center;
+   align-content: center;
+ }
+ 
+ img.logo {
+   margin: 10px;
+   height: 35px;
+   width: 35px;
+ }

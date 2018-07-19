@@ -29,9 +29,14 @@
 
 
 body, html {
-    height: 100vh;
+  margin: 0;
+  height: 100%;
+  position: relative;
   }
 
+  .footer {
+    background-color: rgb(247, 215, 215);
+  }
 #home {
   flex-grow:2;
 }
