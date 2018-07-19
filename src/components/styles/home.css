@@ -1,19 +1,45 @@
 #bioText {
-  width: 75%;
-  padding: 20px;
   text-align: left;
-  color: rgb(94, 91, 91);
   display: block;
+}
+
+#bioText, .skills, #line {
+  width: 85%;
   margin: 0 auto;
+  padding: 20px;
+  color: rgb(94, 91, 91);
   background-color: rgb(240, 237, 234)
+}
+
+.skills {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.skills ul {
+  width: auto;
+  margin: 3px;
+  padding: 10px;
+}
+
+.skills li {
+  padding: 2px;
 }
 
 .profile {
   display: block;
   width: 200px;
   height: auto;
-  margin-top:20px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   border-radius:50%;
+}
+
+#line {
+  margin-top: 50px;
+
 }
