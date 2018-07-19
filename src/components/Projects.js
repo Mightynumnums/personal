@@ -9,7 +9,9 @@ const Projects = () => {
     <div className="projects">
 
       <div id='anbePortfolio'>
-        <p id='anbeText'>Anbe Baccam is an emerging photographer, and I really wanted to showcase his work in a simple way to allow the beauty of his photography to speak for itself, without too much destruction and noise.
+        <p id='anbeText'>Anbe Baccam is an emerging photographer. When I was building his site, really wanted to showcase his work in a simple way. It was important for me to let the beauty of his work to speak for itself, without too much destruction and noise.
+        <br />
+          This website is the first website that I've ever built. Ituses HTML and CSS, with some small amount of JavaScript and JQuery. Working on it made me fall in love with programming. It helped me understand how my passion for design and illustration fit together with tech.
         </p>
         <div className='images'>
           <img src={anbeL} id="anbeComputer" alt="laptopImage" />
@@ -25,6 +27,11 @@ const Projects = () => {
         {/* donke project*/}
         <div id='donke'>
           <p id='donkeText'>The creation of Donke was inspired by inflamed backs and asleep legs.
+          <br />
+            Donke is a native application created using Electron paltform. It is build with React.js for front end, Redux for state managemet, Green Sock Library for animations, and FireStore for data management and real time updates.
+            Donke encourages users to take care of their wellbeing by taking consistent breaks during their work day.
+            My team and I have incorporated a playpen functionality that allows users to interact with other avitars.
+            It is a playful application that dreams to help people to be healthier, active and in tern more productive, even if they must sit behind the desk all day.
         </p>
           <div className='images'>
             {/* <img src={donke} id="donkeDesktop" alt="donkeImg" /> */}
