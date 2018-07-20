@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles/landingPage.css'
 import { Link } from 'react-router-dom'
 import Typing from 'react-typing-animation';
 
@@ -13,6 +12,7 @@ export default class LandingPage extends React.Component {
   }
 
   render() {
+    console.log(this.state)
     return (
       <div className="landing">
         <Typing onFinishedTyping={() => this.setState({ doneTyping: true })}>
@@ -24,7 +24,6 @@ export default class LandingPage extends React.Component {
             <br />
           </div>
         </Typing>
-
         {
           this.state.doneTyping
             ?

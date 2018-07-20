@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles/projects.css'
 import anbeI from '../images/anbeI.jpg'
 import anbeL from '../images/anbeCom.jpg'
 import Navbar from '../components/Navbar.js'
@@ -7,7 +6,7 @@ import Footer from '../components/Footer.js'
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects main-content">
       <Navbar />
 
       <div id='anbePortfolio'>

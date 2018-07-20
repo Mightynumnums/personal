@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles/contacts.css'
 import { TextField, Button } from 'material-ui'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -8,7 +7,7 @@ import Footer from './Footer'
 const Contacts = () => {
 
   return (
-    <div>
+    <div className='main-content'>
       <Navbar />
 
       <div id="formTop" >
