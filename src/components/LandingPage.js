@@ -9,13 +9,19 @@ export default class LandingPage extends React.Component {
     this.state = {
       doneTyping: false
     }
+    this.karen = this.karen.bind(this)
+  }
+
+  karen() {
+    this.setState({
+      doneTyping: true
+    })
   }
 
   render() {
-    console.log(this.state)
     return (
       <div className="landing">
-        <Typing onFinishedTyping={() => this.setState({ doneTyping: true })}>
+        <Typing onFinishedTyping={this.karen}>
           <div>
             Hey there! I'm Aleks. <br />
             <Typing.Delay ms={1000} />

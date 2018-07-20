@@ -1,6 +1,7 @@
 import React from 'react'
-import anbeI from '../images/anbeI.jpg'
-import anbeL from '../images/anbeCom.jpg'
+import anbeI from '../images/anbeTablet.png'
+import anbeL from '../images/anbeClear.png'
+import donke from '../images/Donke.png'
 import Navbar from '../components/Navbar.js'
 import Footer from '../components/Footer.js'
 
@@ -8,6 +9,7 @@ const Projects = () => {
   return (
     <div className="projects main-content">
       <Navbar />
+      <h3>Projects</h3>
 
       <div id='anbePortfolio'>
         <p id='anbeText'>Anbe Baccam is an emerging photographer. When I was building his site, really wanted to showcase his work in a simple way. It was important for me to let the beauty of his work to speak for itself, without too much destruction and noise.
@@ -34,7 +36,8 @@ const Projects = () => {
         </p>
           <div className='images'>
             {/* <img src={donke} id="donkeDesktop" alt="donkeImg" /> */}
-            <img src={anbeL} id="anbeComputer" alt="laptopImage" />
+            <img src={donke} id="donker" alt="laptopImage" />
+            <iframe width="460" height="315" title='Donke' src="https://www.youtube.com/embed/xlSb_pJ16g4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
           <div className='projLinks'>
             <a href='https://github.com/teamCrabby/donke'>GITHUB</a>
