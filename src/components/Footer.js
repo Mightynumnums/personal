@@ -4,6 +4,7 @@ import mail from '../images/mail.svg'
 import linked from '../images/linked2.svg'
 
 export default class Footer extends Component {
+
   render() {
     return (
       <div className="footer">
@@ -12,6 +13,7 @@ export default class Footer extends Component {
           <img src={github} className="logo" alt="logo" />
           <img src={linked} className="logo" alt="logo" />
         </div>
+        <p id='copy'>&copy;Aleks Shineleva | 2018</p>
       </div>
     );
   }

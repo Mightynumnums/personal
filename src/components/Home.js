@@ -1,10 +1,9 @@
 import React from 'react'
 import profilePic from '../images/aleks.jpg'
 import Navbar from './Navbar'
-import Resume from './Resume'
-import Projects from './Projects'
-import Contacts from './Contacts'
 import Footer from './Footer'
+
+
 
 
 const Home = () => {
@@ -17,11 +16,9 @@ const Home = () => {
 
         <img src={profilePic} className="profile bio" alt="selfImg" />
       </div>
-      <Projects />
-      <Resume />
-      <Contacts />
       <Footer />
     </div >
+
   );
 }
 

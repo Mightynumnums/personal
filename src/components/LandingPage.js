@@ -9,10 +9,10 @@ export default class LandingPage extends React.Component {
     this.state = {
       doneTyping: false
     }
-    this.karen = this.karen.bind(this)
+    this.finished = this.finished.bind(this)
   }
 
-  karen() {
+  finished() {
     this.setState({
       doneTyping: true
     })
@@ -21,11 +21,11 @@ export default class LandingPage extends React.Component {
   render() {
     return (
       <div className="landing">
-        <Typing onFinishedTyping={this.karen}>
-          <div>
-            Hey there! I'm Aleks. <br />
+        <Typing onFinishedTyping={this.finished}>
+          <div id='typing'>
+            Oh, Hey! <br />
             <Typing.Delay ms={1000} />
-            It's nice to meet you! <br />
+            I'm so happy you're here!<br />
             <Typing.Delay ms={1000} />
             <br />
           </div>
@@ -33,7 +33,7 @@ export default class LandingPage extends React.Component {
         {
           this.state.doneTyping
             ?
-            <Link to={'/home'}><button id='main'>COME ON IN!</button></Link>
+            <Link to={'/home'}><button id='main'> ENTER</button></Link>
             :
             null
         }

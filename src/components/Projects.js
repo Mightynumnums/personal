@@ -9,8 +9,6 @@ const Projects = () => {
   return (
     <div className="projects main-content">
       <Navbar />
-      <h3>Projects</h3>
-
       <div id='anbePortfolio'>
         <p id='anbeText'>Anbe Baccam is an emerging photographer. When I was building his site, really wanted to showcase his work in a simple way. It was important for me to let the beauty of his work to speak for itself, without too much destruction and noise.
         <br />

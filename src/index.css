@@ -4,24 +4,36 @@ html, body {
   position: relative;
 }
 
+h4, h5, h6 {
+  margin: 0;
+  padding: 4px;
+}
+
+a {
+  border: 2px solid transparent;
+}
+
 
 li {
    list-style: none;
-   padding: 20px;
-    margin-right: 20px;
+   margin: 2px;
+   padding: 12px;
     } 
-  
 
 .main-content {
   min-height: 200vh;
   position: relative;
   botton: 10vh;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 /***** HOME *****/
 #home {
   flex-grow:2;
+}
+
+#projects,#resume, #contacts {
+  border: 2px solid transparent;
 }
 
 .bio {
@@ -53,7 +65,7 @@ li {
 
 /**********************NAVBAR***********************/
 .navigate {
-  padding: 10px;
+  padding: 2px;
   width: 100%;
   position:fixed;
   top: 0;
@@ -64,13 +76,19 @@ li {
   background-color: rgb(44, 43, 43);
   opacity: 0.9;
 }
-.navigate a {
+
+.navigate a, button#main {
   text-decoration: none;
   color: rgb(228, 220, 220);
   margin: 2px;
 }
 
-.navigate a:hover {
+.navigate a {
+  border: 2px solid transparent;
+  padding: 8px;
+}
+
+.navigate a:hover, button#main:hover {
   text-decoration: none;
   background: -moz-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,255,1)), color-stop(100%, rgba(0,255,255,1))); /* safari4+,chrome */
@@ -85,7 +103,6 @@ li {
 
 .navigate a:active {
   /* color: rgb(237, 241, 192) */
-  padding: 8px;
   border: 2px solid transparent;
   border-image: linear-gradient(10deg, rgb(149, 28, 153), rgb(69, 206, 194));
   border-image-slice: 1;
@@ -133,7 +150,8 @@ img {
 
 }
 
-.projLinks a {
+.projLinks a, #main {
+  border: 2px solid transparent;
   margin-right: 20px;
   margin-top: 40px;
   padding: 8px;
@@ -149,7 +167,7 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
-.projLinks a:hover {
+.projLinks a:hover, #main {
   border: 2px solid transparent;
   border-image: linear-gradient(10deg, rgb(149, 28, 153), rgb(69, 206, 194));
   border-image-slice: 1;
@@ -185,7 +203,7 @@ img {
 
 /************************************** FOOTER ********************************/
 .footer {
-  position: fixed;
+  position: absolute;
   margin-top: 20px;
   bottom:0;
   left:0;
@@ -204,10 +222,16 @@ img {
  }
  
  img.logo {
-   margin: 10px;
+   margin: 20px;
+   padding: 0;
    height: 35px;
    width: 35px;
  }
+
+#copy {
+  font-size: 12px;
+  margin: 2px 2px 20px 2px;
+}
 
  /************************************************LANDING PAGE*************************************/
  .landing {
@@ -215,16 +239,20 @@ img {
   text-align: center;
   padding-top: 200px;
   font-size: 2em;
-  background: url('./images/bkgrnd.JPG');
-  background-size: 1200px auto;
-  background-repeat: no-repeat;
-  color: white;
+  /* background: url('./images/bkgrnd.JPG'); */
+  /* background-size: 1200px auto;
+  background-repeat: no-repeat; */
+  color: black;
+ }
+
+ #main {
+   font-size: 20px;
  }
   
-  #main {
+  /* #main {
     background: transparent;
     border: 2px solid rgb(97, 125, 136);
-    color: white;
+    color:black;
     font-size: 20px;
     border-radius: 6px;
     padding: 12px;
@@ -233,23 +261,68 @@ img {
   }
   #main:hover {
     background-color: rgb(27, 18, 12);
-    border: 2px solid rgb(240, 233, 137);
-    color: rgb(240, 233, 137);
-  }
+    border: 2px solid black;
+    color: black;
+  } */
 
 
    /************************************************RESUME PAGE*************************************/
 
    .myResume {
+     margin-top: 100px;
      display: flex;
      flex-direction: column;
-     margin-top: 100px;
+     text-align: center;
+     
    } 
+
+   .resume-tag {
+     padding: 5px;
+     width: 200px;
+     margin-top: 60px;
+     position: absolute;
+     font-size: 18px;
+   }
+
+   h2.resume-tag{
+     margin-top: 0;
+   }
    .skills {
      display: flex;
+     margin-top: 0x;
      flex-direction: row;
      flex-wrap: wrap;
      margin-left: 240px;
-     font-size: 18px;
+     font-size: 12px;
+     border-left: 2px solid black;
+     text-align: left;
+   } 
+
+   .skills ul {
+     margin-top: 0;
    }
-   
+
+   .skills li {
+     padding:2px;
+   }
+
+   .work-header, .education-header {
+    margin: 0 20px 0 20px;
+   }
+
+   .work-exp, .education {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  p#work-description {
+    margin: 10px 20px 40px 20px;
+    font-size: 12px;
+  }
+
+  #break{
+    margin-top:30px;
+  }
+
+ 
