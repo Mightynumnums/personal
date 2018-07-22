@@ -2,7 +2,10 @@
 html, body {
   height: 100%;
   position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
+
+
 
 h4, h5, h6 {
   margin: 0;
@@ -27,7 +30,7 @@ li {
   padding-bottom: 200px;
 }
 
-/***** HOME *****/
+/***************** HOME **************/
 #home {
   flex-grow:2;
 }
@@ -102,16 +105,18 @@ li {
 }
 
 .navigate a:active {
-  /* color: rgb(237, 241, 192) */
-  border: 2px solid transparent;
+  background: linear-gradient(45deg, rgb(155, 1, 155) 0%, rgba(0,155,155,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* border: 2px solid transparent;
   border-image: linear-gradient(10deg, rgb(149, 28, 153), rgb(69, 206, 194));
-  border-image-slice: 1;
+  border-image-slice: 1; */
 }
 
 
 /*****************************PROJECTS***************************/
 
-#anbePortfolio, #donke {
+#anbePortfolio, #donkeDiv {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -239,9 +244,6 @@ img {
   text-align: center;
   padding-top: 200px;
   font-size: 2em;
-  /* background: url('./images/bkgrnd.JPG'); */
-  /* background-size: 1200px auto;
-  background-repeat: no-repeat; */
   color: black;
  }
 

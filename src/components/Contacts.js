@@ -1,14 +1,12 @@
 import React from 'react'
 import { TextField, Button } from 'material-ui'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Page from '../components/Page.js'
 
 
 const Contacts = () => {
 
   return (
-    <div className='main-content'>
-      <Navbar />
+    <Page>
       <h3>Get in touch</h3>
       <div id="formTop" >
         <h3 id='formTag'> Hey!<br />I would love to hear from you!</h3>
@@ -21,8 +19,7 @@ const Contacts = () => {
           <Button id='formSubmitButton' type="submit" value="Send"> Submit </Button>
         </form>
       </div>
-      <Footer />
-    </div>
+    </Page>
   );
 }
 export default Contacts
