@@ -1,6 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
 import Page from '../components/Page.js'
 
 
@@ -8,7 +6,6 @@ const Resume = () => {
   return (
     <Page>
       <div className='resume main-content'>
-        <Navbar />
         <div className='myResume'>
           <h2 className='resume-tag'>Technologies</h2>
           <div className='skills'>
@@ -37,7 +34,7 @@ const Resume = () => {
             </ul>
           </div>
         </div>
-        <div className='myResume'>
+        <div className='myResume work'>
           <h2 className='resume-tag'>Work Experience</h2>
           <div className='skills' id='work-exp'>
             <div className='work-header'>
@@ -84,7 +81,7 @@ const Resume = () => {
       </p>
           </div>
 
-          <div className='myResume'>
+          <div className='myResume educationDiv'>
             <h2 className='resume-tag'>Education</h2>
             <div className='skills education'>
               <div className='education-header'>
@@ -103,7 +100,6 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </Page>
   )

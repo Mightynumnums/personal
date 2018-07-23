@@ -1,11 +1,11 @@
+
 /******MAIN STYLES******/
 html, body {
   height: 100%;
   position: relative;
   font-family: 'Montserrat', sans-serif;
+  color: rgb(94, 91, 91);
 }
-
-
 
 h4, h5, h6 {
   margin: 0;
@@ -15,7 +15,6 @@ h4, h5, h6 {
 a {
   border: 2px solid transparent;
 }
-
 
 li {
    list-style: none;
@@ -40,13 +39,12 @@ li {
 }
 
 .bio {
-  width: 75%;
-  padding: 100px 20px;
+  width: 600px;
+  padding: 100px 100px;
   text-align: left;
-  color: rgb(94, 91, 91);
   display: block;
   margin: 0 auto;
-  background-color: rgb(240, 237, 234)
+  background-color: rgb(240, 237, 234);
 }
 
 #bioText {
@@ -54,7 +52,6 @@ li {
   display: block;
 }
 
-  
 .profile {
   display: block;
   width: 200px;
@@ -75,12 +72,21 @@ li {
   left:0;
   margin: 0 auto;
   display: flex;
-  flex-flow: row-wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: rgb(44, 43, 43);
   opacity: 0.9;
+  transition:ease-out, height 500ms 0ms, opacity 500ms  500ms;
+}
+.hidden {
+  transition:ease-out, height 500ms 500ms, opacity 500ms 0ms;;
+  opacity: 0.0;
+  height: 0px;
+  /* display: none; */
+
 }
 
-.navigate a, button#main {
+.navigate a {
   text-decoration: none;
   color: rgb(228, 220, 220);
   margin: 2px;
@@ -91,7 +97,7 @@ li {
   padding: 8px;
 }
 
-.navigate a:hover, button#main:hover {
+.navigate a:hover {
   text-decoration: none;
   background: -moz-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* ff3.6+ */
   background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,255,1)), color-stop(100%, rgba(0,255,255,1))); /* safari4+,chrome */
@@ -108,9 +114,6 @@ li {
   background: linear-gradient(45deg, rgb(155, 1, 155) 0%, rgba(0,155,155,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* border: 2px solid transparent;
-  border-image: linear-gradient(10deg, rgb(149, 28, 153), rgb(69, 206, 194));
-  border-image-slice: 1; */
 }
 
 
@@ -129,7 +132,7 @@ li {
   color: rgb(94, 91, 91);
   display: block;
   margin: 0 auto;
-  background-color: rgb(240, 237, 234)
+  background-color: rgb(240, 237, 234);
 }
 
 img {
@@ -149,13 +152,11 @@ img {
   height: 200px;
 }
 
-
 #donker {
   margin-top: 100px;
-
 }
 
-.projLinks a, #main {
+.projLinks a {
   border: 2px solid transparent;
   margin-right: 20px;
   margin-top: 40px;
@@ -243,30 +244,26 @@ img {
   height: 100vh;
   text-align: center;
   padding-top: 200px;
-  font-size: 2em;
-  color: black;
+  font-size: 3em;
+  background: url('./images/backLight.png')
  }
 
  #main {
-   font-size: 20px;
+   font-size: .5em;
+   background: white;
+   border: 2px solid rgb(94, 91, 91);;
+   padding: 12px 15px;
  }
-  
-  /* #main {
-    background: transparent;
-    border: 2px solid rgb(97, 125, 136);
-    color:black;
-    font-size: 20px;
-    border-radius: 6px;
-    padding: 12px;
-    margin-top: 12px;
-    
-  }
-  #main:hover {
-    background-color: rgb(27, 18, 12);
-    border: 2px solid black;
-    color: black;
-  } */
 
+ #main:hover {
+  font-size: .5em;
+  background:rgb(94, 91, 91);;
+  color: white;
+  border: 2px solid rgb(94, 91, 91);;
+  padding: 12px 15px;
+}
+
+ 
 
    /************************************************RESUME PAGE*************************************/
 
@@ -275,7 +272,6 @@ img {
      display: flex;
      flex-direction: column;
      text-align: center;
-     
    } 
 
    .resume-tag {
@@ -289,6 +285,7 @@ img {
    h2.resume-tag{
      margin-top: 0;
    }
+
    .skills {
      display: flex;
      margin-top: 0x;
@@ -327,4 +324,137 @@ img {
     margin-top:30px;
   }
 
+
+
+/************************MEDIA Q********************************/
+
+
+@media all and (max-width: 400px) {
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    height: 100%;
+    overflow-y: scroll;
+    position: relative;
+  }
+  
+.main-content {
+    padding-bottom: 45px;
+  }
+
+  .navigate {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .bio{
+    width: 75%;
+    padding: 20px;
+    text-align: left;
+    color: rgb(94, 91, 91);
+    display: block;
+    margin-top: 190px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: white;
+  }
+  .profile {
+    margin-top: 30px;
+  }
+
+
+  /* PROJECTS */
+  #anbePortfolio {
+    margin-top:200px;
+    }
+  #donkeDiv {
+    margin-top: 50px;
+    margin-bottom: 200px;
+  }
+
+  #anbePortfolio, #donkeDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #anbeText, #donkeText {
+    line-height: 1.6;
+  }
+
+  .images {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    align-content: space-around;
+  }
+  
+#anbeComputer {
+    height: 200px;
+    width: auto;
+  }
+
+  #anbeIphone {
+    width: 200px;
+    height: auto;
+    padding-left: 50px;
+  }
+  
+  #donker {
+    margin-top: 5px;
+  }
+  img#donker {
+      padding: 50px;
+  }
+
+  #donke-video {
+    height: 250px;
+    width: 400px;
+  }
+  
+  .projLinks a {
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 8px;
+    text-decoration: none;
+  }
+  
+  /************************************************RESUME PAGE*************************************/
+
+  .myResume {
+    margin-top: 220px;
+  } 
+
+  .resume-tag {
+    width: 20px;
+    font-size: 12px;
+  }
+
+  .skills {
+    margin-left: 100px;
+  } 
+
+  .work, .educationDiv {
+    margin-top: 30px;
+  }
+
+  .educationDiv {
+    margin-bottom: 150px;  
+  }
+
+
+
+  
+  
+}
  

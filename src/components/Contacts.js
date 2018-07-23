@@ -7,7 +7,7 @@ const Contacts = () => {
 
   return (
     <Page>
-      <h3>Get in touch</h3>
+
       <div id="formTop" >
         <h3 id='formTag'> Hey!<br />I would love to hear from you!</h3>
         <form id="contact-form" method="POST" action="https://formspree.io/deadcookies@gmail.com">
