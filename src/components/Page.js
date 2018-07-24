@@ -13,23 +13,24 @@ export default class Page extends React.Component {
   }
 
   componentWillMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('touchmove', this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('touchmove', this.handleScroll);
   }
 
   handleScroll() {
+    console.log('scrolling', window.scrollY)
     const { lastScrollY } = this.state;
     const currentScrollY = window.scrollY;
 
-    if (currentScrollY > lastScrollY) {
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
       this.setState({ hidden: true });
-    } else {
+    } else if (currentScrollY < 100) {
       this.setState({ hidden: false });
     }
-    this.setState({ lastScrollY: currentScrollY });
+    // this.setState({ lastScrollY: currentScrollY });
   };
 
   componentDidMount() {

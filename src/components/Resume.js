@@ -36,17 +36,18 @@ const Resume = () => {
         </div>
         <div className='myResume work'>
           <h2 className='resume-tag'>Work Experience</h2>
-          <div className='skills' id='work-exp'>
+          
+          <div className='skills work-exp'>
             <div className='work-header'>
               <h4>Fullstack Academy Of Code</h4>
-              <h5>Teaching Fellow</h5>
-              <h5>May 2o18 - Present</h5>
+              <h5>Teaching Fellow at Fullstack Academy of Code for Grace Hopper Program</h5>
+              <h5>June 2o18 - Present</h5>
             </div>
-            <p id='work-description'>
-              Responsibilities include doing things with the things and then creating more things to fdo wuth more id tdhnfi,.
-          <br />
-              And thenh ddlkhshs kshs jsjhs, ,ote hkkshbs. anfgtreh. Fir treg dhygabs jtefsh  kjsunbd.
-          </p>
+            <ul className='work-description'>
+              <li>Helped students debug their code and answered technical questions</li>
+              <li>Conducted programming interviews for admissions</li>
+              <li>Assisted in code reviews</li>
+          </ul>
           </div>
 
           <div className='skills work-exp'>
@@ -55,14 +56,12 @@ const Resume = () => {
               <h5>Manager | Barista</h5>
               <h5>July 2o15 - January 2o18</h5>
             </div>
-            <p id='work-description'>
-              Store manager who manged the store with the store things happening ath e store wth other tgusv.
-              tore manager who manged the store with the store things happening ath e store wth other tgusv
-              tore manager who manged the store with the store things happening ath e store wth other tgusv
-        <br />
-              And thenh ddlkhshs kshs jsjhs, ,ote hkkshbs. anfgtreh. Fir treg dhygabs jtefsh  kjsunbd.
-              tore manager who manged the store with the store things happening ath e store wth other tgusv
-        </p>
+            <ul className='work-description'>
+              <li>Managed a team of 6+ individuals</li>
+              <li>Hired and trained staff</li>
+              <li>Prepared specialty drinks</li>
+              <li>Ensured 100% customer service satisfaction and superb customer service</li>
+          </ul>
           </div>
 
           <div className='skills work-exp'>
@@ -71,15 +70,12 @@ const Resume = () => {
               <h5>Manager | Barista</h5>
               <h5>July 2o15 - January 2o18</h5>
             </div>
-            <p id='work-description'>
-              Store manager who manged the store with the store things happening ath e store wth other tgusv.
-              tore manager who manged the store with the store things happening ath e store wth other tgusv
-              tore manager who manged the store with the store things happening ath e store wth other tgusv
-      <br />
-              And thenh ddlkhshs kshs jsjhs, ,ote hkkshbs. anfgtreh. Fir treg dhygabs jtefsh  kjsunbd.
-              tore manager who manged the store with the store things happening ath e store wth other tgusv
-      </p>
-          </div>
+            <ul className='work-description'>
+              <li>Made specialty drinks to order</li>
+              <li>Expedited smooth and professional service</li>
+              <li>Handled daily ordering and organization</li>
+            </ul>
+            </div>
 
           <div className='myResume educationDiv'>
             <h2 className='resume-tag'>Education</h2>

@@ -38,7 +38,6 @@ export default class Projects extends React.Component {
                 It is a playful application that dreams to help people to be healthier, active and in tern more productive, even if they must sit behind the desk all day.
           </p>
               <div className='images'>
-                {/* <img src={donke} id="donkeDesktop" alt="donkeImg" /> */}
                 <img src={donke} id="donker" alt="laptopImage" />
                 <iframe id='donke-video' width="460" height="315" title='Donke' src="https://www.youtube.com/embed/xlSb_pJ16g4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>

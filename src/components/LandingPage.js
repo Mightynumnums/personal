@@ -27,7 +27,6 @@ export default class LandingPage extends React.Component {
             <Typing.Delay ms={1000} />
             I'm so happy you're here!<br />
             <Typing.Delay ms={1000} />
-            <br />
           </div>
         </Typing>
         {

@@ -181,7 +181,7 @@ img {
   border-image-slice: 1;
 }
 
-/*********************************CONTACTS-EMAIL FORM***********************************/
+/******************CONTACTS-EMAIL FORM********************/
 #formTop {
   width: 600px;
   padding: 100px 100px;
@@ -219,7 +219,7 @@ img {
 }
 
 
-/************************************** FOOTER ********************************/
+/*********************** FOOTER *************************/
 .footer {
   position: absolute;
   margin-top: 20px;
@@ -251,7 +251,7 @@ img {
   margin: 2px 2px 20px 2px;
 }
 
- /************************************************LANDING PAGE*************************************/
+ /*******************LANDING PAGE**********************/
  .landing {
   height: 100vh;
   text-align: center;
@@ -277,8 +277,12 @@ img {
 
  
 
-   /************************************************RESUME PAGE*************************************/
+   /*******************RESUME PAGE***********************/
 
+
+   .resume {
+    background: url('./images/backLight.png');
+   }
    .myResume {
      margin-top: 100px;
      display: flex;
@@ -331,9 +335,12 @@ img {
     padding: 0;
   }
 
-  p#work-description {
+  .work-description {
     margin: 10px 20px 40px 20px;
     font-size: 12px;
+  }
+  .work-description li {
+    list-style: inside;
   }
 
   #break{
