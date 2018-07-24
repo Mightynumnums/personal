@@ -5,6 +5,7 @@ html, body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   color: rgb(94, 91, 91);
+  line-height: 1.7;
 }
 
 h4, h5, h6 {
@@ -38,14 +39,6 @@ li {
   border: 2px solid transparent;
 }
 
-/* .bio {
-  /* position:static;
-  width: 600px;
-  padding: 100px 100px;
-  text-align: left;
-  display: block;
-  margin: 0 auto; */
-
   .bio {
   width: 75%;
   padding: 20px;
@@ -62,6 +55,7 @@ li {
 #bioText {
   text-align: left;
   display: block;
+  padding: 30px;
 }
 
 .profile {
@@ -351,7 +345,7 @@ img {
 /************************MEDIA Q********************************/
 
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
   html {
     height: 100%;
     overflow: hidden;
@@ -404,10 +398,6 @@ img {
   #anbePortfolio, #donkeDiv {
     display: flex;
     flex-direction: column;
-  }
-  
-  #anbeText, #donkeText {
-    line-height: 1.6;
   }
 
   .images {
@@ -473,36 +463,33 @@ img {
   }
 
   /*********************************CONTACTS-EMAIL FORM***********************************/
-#formTop {
-  margin-top: 250px;
+  #formTop {
+    width: 300px;
+    padding: 0 0;
+    margin-top: 250px;
+  }
+
+  #contact-form {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formInput {
+    padding-top: 40px;
+  }
+
+  #formSubmitButton {
+    margin-top: 20px;
+    border-style: solid;
+    border-color: rgb(116, 113, 113);
+    border-width: 2px;
+    border-radius: 8px;
+    width: 100px;
+    color: pink;
+  } 
+
 }
 
-#contact-form {
-  margin-top: 50px;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.formInput {
-  padding-top: 40px;
-}
-
-#formSubmitButton {
-  margin-top: 20px;
-  border-style: solid;
-  border-color: rgb(116, 113, 113);
-  border-width: 2px;
-  border-radius: 8px;
-  width: 100px;
-  color: pink;
-}
-
-
-
-
-  
-  
-}
- 
