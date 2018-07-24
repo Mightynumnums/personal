@@ -3,6 +3,7 @@
   flex-grow:1;
 }
 .navigate {
+  letter-spacing: 3px;
   padding: 2px;
   width: 100%;
   position:fixed;
@@ -15,6 +16,9 @@
   background-color: rgb(44, 43, 43);
   opacity: 0.9;
   transition:ease-in, top 1000ms 0ms, opacity 1000ms  500ms;
+  -webkit-box-shadow: -1px 4px 11px -2px rgba(128,104,128,1);
+  -moz-box-shadow: -1px 4px 11px -2px rgba(128,104,128,1);
+  box-shadow: -1px 4px 11px -2px rgba(128,104,128,1);
 }
 
 .hidden {
@@ -50,9 +54,10 @@
   -webkit-text-fill-color: transparent;
 }
 
-
+ 
 @media all and (max-width: 600px) {
   .navigate {
+    overflow-y: scroll;
     top: 0;
     position: fixed;
     width: 100%;
@@ -62,4 +67,4 @@
     justify-content: center;
     text-align: center;
   }
-}
+} 

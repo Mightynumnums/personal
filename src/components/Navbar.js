@@ -7,10 +7,10 @@ const Navbar = (props) => {
   const className = props.hidden ? 'navigate hidden' : 'navigate';
   return (
       <ul className={className} id='navbar'>
-        <li id='home'><NavLink to='/home'>Home</NavLink></li>
-        <li id='projects'><NavLink to='/projects'>Projects</NavLink></li>
-        <li id='resume'><NavLink to='/resume'>Resume</NavLink></li>
-        <li id='contacts'><NavLink to='/contacts'>Contact</NavLink></li>
+        <li id='home'><NavLink to='/home'>HOME</NavLink></li>
+        <li id='projects'><NavLink to='/projects'>PROJECTS</NavLink></li>
+        <li id='resume'><NavLink to='/resume'>RESUME</NavLink></li>
+        <li id='contacts'><NavLink to='/contacts'>CONTACTS</NavLink></li>
       </ul>
   )
 }

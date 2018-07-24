@@ -31,7 +31,6 @@ export default class Page extends React.Component {
     } else if (currentScrollY < 100) {
       this.setState({ hidden: false });
     }
-    // this.setState({ lastScrollY: currentScrollY });
   };
 
   componentDidMount() {
