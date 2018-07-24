@@ -3,34 +3,35 @@ import anbeI from '../images/anbeTablet.png'
 import anbeL from '../images/anbeClear.png'
 import donke from '../images/Donke.png'
 import Page from '../components/Page.js'
+import './styles/projects.css'
 
-export default class Projects extends React.Component {
-  constructor() {
-    super()
-    this.state = {}
-  }
+const Projects =() => {
 
-  render() {
+
     return (
       <Page>
         <div className="projects">
           <div id='anbePortfolio'>
-            <p id='anbeText'>Anbe Baccam is an emerging photographer. When I was building his site, really wanted to showcase his work in a simple way. It was important for me to let the beauty of his work to speak for itself, without too much destruction and noise.
+            <p className='projDescr'>Anbe Baccam is an emerging photographer. When I was building his site, really wanted to showcase his work in a simple way. It was important for me to let the beauty of his work to speak for itself, without too much destruction and noise.
           <br />
               This website is the first website that I've ever built. Ituses HTML and CSS, with some small amount of JavaScript and JQuery. Working on it made me fall in love with programming. It helped me understand how my passion for design and illustration fit together with tech.
           </p>
             <div className='images'>
-              <img src={anbeL} id="anbeComputer" alt="laptopImage" />
-              <img src={anbeI} id='anbeIphone' alt='iphoneImage' />
+              <img src={anbeL}  alt="laptopImage" />
+              <img src={anbeI} alt='iphoneImage' />
             </div>
             <div className='projLinks'>
-              <a className='grad1' href='https://github.com/Mightynumnums/anbe2'>GITHUB</a>
-              <a className='grad1' href='https://anbebaccamportfolio.herokuapp.com/'>WEBSITE</a>
+              <a  href='https://github.com/Mightynumnums/anbe2'>GITHUB</a>
+              <a  href='https://anbebaccamportfolio.herokuapp.com/'>WEBSITE</a>
             </div>
+
+
+
+
 
             {/* donke project*/}
             <div id='donkeDiv'>
-              <p id='donkeText'>The creation of Donke was inspired by inflamed backs and asleep legs.
+              <p className='projDescr'>The creation of Donke was inspired by inflamed backs and asleep legs.
             <br />
                 Donke is a native application created using Electron paltform. It is build with React.js for front end, Redux for state managemet, Green Sock Library for animations, and FireStore for data management and real time updates.
                 Donke encourages users to take care of their wellbeing by taking consistent breaks during their work day.
@@ -46,10 +47,11 @@ export default class Projects extends React.Component {
                 <a href='https://buddy-4f263.firebaseapp.com/'>WEBSITE</a>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
       </Page>
     );
-  }
 }
+
+export default Projects
 

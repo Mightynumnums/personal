@@ -3,7 +3,7 @@
 html, body {
   height: 100%;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Karla', sans-serif;
   color: rgb(94, 91, 91);
   line-height: 1.7;
 }
@@ -18,334 +18,17 @@ a {
 }
 
 li {
-   list-style: none;
-   margin: 2px;
-   padding: 12px;
+    list-style: none;
+    margin: 2px;
+    padding: 12px;
     } 
 
-.main-content {
-  min-height: 110vh;
-  position: relative;
-  botton: 10vh;
-  padding-bottom: 200px;
-}
-
-/***************** HOME **************/
-#home {
-  flex-grow:2;
-}
-
-#projects,#resume, #contacts {
-  border: 2px solid transparent;
-}
-
-  .bio {
-  width: 75%;
-  padding: 20px;
-  text-align: left;
-  color: rgb(94, 91, 91);
-  display: block;
-  margin-top: 100px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
-  background-color: rgb(240, 237, 234);
-}
-
-#bioText {
-  text-align: left;
-  display: block;
-  padding: 30px;
-}
-
-.profile {
-  display: block;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius:50%;
-}
 
 
-/**********************NAVBAR***********************/
-.navigate {
-  padding: 2px;
-  width: 100%;
-  position:fixed;
-  top: 0;
-  left:0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: rgb(44, 43, 43);
-  opacity: 0.9;
-  transition:ease-out, height 500ms 0ms, opacity 500ms  500ms;
-}
-.hidden {
-  transition:ease-out, height 500ms 500ms, opacity 500ms 0ms;;
-  opacity: 0.0;
-  height: 0px;
-}
-
-.navigate a {
-  text-decoration: none;
-  color: rgb(228, 220, 220);
-  margin: 2px;
-  border: 2px solid transparent;
-  padding: 8px;
-}
-
-.navigate a:hover {
-  text-decoration: none;
-  background: -moz-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,255,1)), color-stop(100%, rgba(0,255,255,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* ie10+ */
-  background: linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#ff00ff',GradientType=1 ); /* ie6-9 */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.navigate a:active {
-  background: linear-gradient(45deg, rgb(155, 1, 155) 0%, rgba(0,155,155,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
-/*****************************PROJECTS***************************/
-
-#anbePortfolio, #donkeDiv {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-
-}
-
-#anbeText, #donkeText {
-  width: 75%;
-  padding: 20px;
-  text-align: left;
-  color: rgb(94, 91, 91);
-  display: block;
-  margin: 0 auto;
-  background-color: rgb(240, 237, 234);
-}
-
-img {
-  padding: 20px;
-}
-
-.images, .projLinks {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-self: center;
-  align-content: space-around;
-}
-
-#anbeIphone, #anbeComputer, #donker{
-  height: 200px;
-}
-
-#donker {
-  margin-top: 100px;
-}
-
-.projLinks a {
-  border: 2px solid transparent;
-  margin-right: 20px;
-  margin-top: 40px;
-  padding: 8px;
-  text-decoration: none;
-  background: -moz-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,255,1)), color-stop(100%, rgba(0,255,255,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* ie10+ */
-  background: linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#ff00ff',GradientType=1 ); /* ie6-9 */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.projLinks a:hover, #main {
-  border: 2px solid transparent;
-  border-image: linear-gradient(10deg, rgb(149, 28, 153), rgb(69, 206, 194));
-  border-image-slice: 1;
-}
-
-/******************CONTACTS-EMAIL FORM********************/
-#formTop {
-  width: 600px;
-  padding: 100px 100px;
-  display: block;
-  margin: 20px 40px 0 40px;
-}
-
-#contact-form {
-  margin-top: 50px;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.formInput {
-  padding-top: 40px;
-}
-
-#formSubmitButton {
-  border-style: solid;
-  border-color: rgb(116, 113, 113);
-  border-width: 2px;
-  border-radius: 8px;
-  justify-content: center;
-  width: 100px;
-  color: rgb(116, 113, 113);
-}
-
-#formSubmitButton:hover {
-  border-style: solid;
-  border-color: rgb(116, 113, 113);
-  background-color:rgb(116, 113, 113);
-  color: white;
-}
-
-
-/*********************** FOOTER *************************/
-.footer {
-  position: absolute;
-  margin-top: 20px;
-  bottom:0;
-  left:0;
-  right:0;
-	width: 100%;
-	text-align: center;
-  background-color: white;
-}
- 
- .footer-logos {
-   display: flex;
-   flex-flow: row-wrap;
-   flex-shrink: 1;
-   justify-content: center;
-   align-content: center;
- }
- 
- img.logo {
-   margin: 20px;
-   padding: 0;
-   height: 35px;
-   width: 35px;
- }
-
-#copy {
-  font-size: 12px;
-  margin: 2px 2px 20px 2px;
-}
-
- /*******************LANDING PAGE**********************/
- .landing {
-  height: 100vh;
-  text-align: center;
-  padding-top: 200px;
-  font-size: 3em;
-  background: url('./images/backLight.png')
- }
-
- #main {
-   font-size: .5em;
-   background: white;
-   border: 2px solid rgb(94, 91, 91);;
-   padding: 12px 15px;
- }
-
- #main:hover {
-  font-size: .5em;
-  background:rgb(94, 91, 91);;
-  color: white;
-  border: 2px solid rgb(94, 91, 91);;
-  padding: 12px 15px;
-}
 
  
 
-   /*******************RESUME PAGE***********************/
-
-
-   .resume {
-    background: url('./images/backLight.png');
-   }
-   .myResume {
-     margin-top: 100px;
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-   } 
-
-   .resume-tag {
-     padding: 5px;
-     width: 200px;
-     margin-top: 60px;
-     position: absolute;
-     font-size: 18px;
-    }
-    
-    h2.resume-tag{
-      margin-top: 0;
-   }
-
-   h4{
-     font-weight: 600;
-   }
-   .skills {
-     display: flex;
-     margin-top: 0x;
-     flex-direction: row;
-     flex-wrap: wrap;
-     margin-left: 240px;
-     font-size: 12px;
-     border-left: 2px solid black;
-     text-align: left;
-    
-   } 
-
-   .skills ul {
-     margin-top: 0;
-   }
-
-   .skills li {
-     padding:2px;
-   }
-
-   .work-header, .education-header {
-    margin: 0 20px 0 20px;
-   }
-
-   .work-exp, .education {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .work-description {
-    margin: 10px 20px 40px 20px;
-    font-size: 12px;
-  }
-  .work-description li {
-    list-style: inside;
-  }
-
-  #break{
-    margin-top:30px;
-  }
+   
 
 
 
@@ -363,92 +46,15 @@ img {
     overflow-y: scroll;
     position: relative;
   }
+}
   
-.main-content {
-    padding-bottom: 45px;
-  }
-
-  .navigate {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .bio{
-    width: 75%;
-    padding: 20px;
-    text-align: left;
-    color: rgb(94, 91, 91);
-    display: block;
-    margin-top: 190px;
-    background-color: white;
-  }
-  .profile {
-    margin-top: 30px;
-  }
 
 
-  /* PROJECTS */
-  #anbePortfolio {
-    margin-top:200px;
-    }
-  #donkeDiv {
-    margin-top: 50px;
-    margin-bottom: 200px;
-  }
-
-  #anbePortfolio, #donkeDiv {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .images {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-self: center;
-    align-content: space-around;
-  }
-  
-#anbeComputer {
-    height: 200px;
-    width: auto;
-  }
-
-  #anbeIphone {
-    width: 200px;
-    height: auto;
-    padding-left: 50px;
-  }
-  
-  #donker {
-    margin-top: 5px;
-  }
-  img#donker {
-      padding: 50px;
-  }
-
-  #donke-video {
-    height: 250px;
-    width: 380px;
-  }
-  
-  .projLinks a {
-    margin-right: 20px;
-    margin-top: 10px;
-    padding: 8px;
-    text-decoration: none;
-  }
+ 
   
   /************************************************RESUME PAGE*************************************/
 
-  .myResume {
+  /* .myResume {
     margin-top: 220px;
   } 
 
@@ -469,34 +75,7 @@ img {
     margin-bottom: 150px;  
   }
 
-  /*********************************CONTACTS-EMAIL FORM***********************************/
-  #formTop {
-    width: 300px;
-    padding: 0 0;
-    margin-top: 250px;
-  }
+ 
 
-  #contact-form {
-    margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .formInput {
-    padding-top: 40px;
-  }
-
-  #formSubmitButton {
-    margin-top: 20px;
-    border-style: solid;
-    border-color: rgb(116, 113, 113);
-    border-width: 2px;
-    border-radius: 8px;
-    width: 100px;
-    color: pink;
-  } 
-
-}
+} */
 

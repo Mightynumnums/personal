@@ -1,11 +1,12 @@
 import React from 'react'
 import Page from '../components/Page.js'
+import './styles/resume.css'
 
 
 const Resume = () => {
   return (
     <Page>
-      <div className='resume main-content'>
+      <div className='resume'>
         <div className='myResume'>
           <h2 className='resume-tag'>Technologies</h2>
           <div className='skills'>
@@ -39,7 +40,7 @@ const Resume = () => {
           
           <div className='skills work-exp'>
             <div className='work-header'>
-              <h4>Fullstack Academy Of Code</h4>
+              <h3>Fullstack Academy Of Code</h3>
               <h5>Teaching Fellow at Fullstack Academy of Code for Grace Hopper Program</h5>
               <h5>June 2o18 - Present</h5>
             </div>
@@ -52,7 +53,7 @@ const Resume = () => {
 
           <div className='skills work-exp'>
             <div className='work-header'>
-              <h4>Happy Bones NYC</h4>
+              <h3>Happy Bones NYC</h3>
               <h5>Manager | Barista</h5>
               <h5>July 2o15 - January 2o18</h5>
             </div>
@@ -66,7 +67,7 @@ const Resume = () => {
 
           <div className='skills work-exp'>
             <div className='work-header'>
-              <h4>Ninth Street Espresso</h4>
+              <h3>Ninth Street Espresso</h3>
               <h5>Manager | Barista</h5>
               <h5>July 2o15 - January 2o18</h5>
             </div>
@@ -81,16 +82,16 @@ const Resume = () => {
             <h2 className='resume-tag'>Education</h2>
             <div className='skills education'>
               <div className='education-header'>
-                <h4>Grace Hopper Program at Fullstack Academy of Code</h4>
-                <h6>Fullstack JavaScript Developer</h6>
+                <h3>Grace Hopper Program at Fullstack Academy of Code</h3>
+                <h4>Fullstack JavaScript Developer</h4>
                 <h5>January 2o18 - May 2o18</h5>
               </div>
             </div>
 
             <div className='skills education'>
               <div className='education-header' id='break'>
-                <h4>Fashion Institute of Technology</h4>
-                <h5>BFA in Illustration</h5>
+                <h3>Fashion Institute of Technology</h3>
+                <h4>BFA in Illustration</h4>
                 <h5 className='spacer'>August 2oo3 - August 2oo7</h5>
               </div>
             </div>

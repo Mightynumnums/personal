@@ -1,0 +1,90 @@
+/*******************RESUME PAGE***********************/
+
+ .myResume {
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+ } 
+
+ .resume-tag {
+   padding: 5px;
+   width: 200px;
+   margin-top: 60px;
+   position: absolute;
+   font-size: 18px;
+  }
+  
+  h2.resume-tag{
+    margin-top: 0;
+ }
+ h4{
+   font-weight: 600;
+ }
+ .skills {
+   display: flex;
+   margin-top: 0x;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin-left: 240px;
+   font-size: 12px;
+   border-left: 2px solid black;
+   text-align: left;
+  
+ } 
+
+ .skills ul {
+   margin-top: 0;
+ }
+
+ .skills li {
+   padding:2px;
+ }
+
+ .work-header, .education-header {
+  margin: 0 20px 0 20px;
+ }
+
+ .work-exp, .education {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.work-description {
+  margin: 10px 20px 40px 20px;
+  font-size: 12px;
+}
+.work-description li {
+  list-style: inside;
+}
+
+#break{
+  margin-top:30px;
+}
+
+
+
+@media all and (max-width: 600px) {
+  .myResume {
+    margin-top: 240px;
+  } 
+
+  .resume-tag {
+    width: 20px;
+    font-size: 14px;
+  }
+
+  .skills {
+    margin-left: 100px;
+  } 
+
+  .work, .educationDiv {
+    margin-top: 30px;
+  }
+
+  .educationDiv {
+    margin-bottom: 150px;  
+  }
+
+}

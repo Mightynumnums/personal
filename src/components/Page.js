@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar.js'
 import Footer from '../components/Footer.js'
+import './styles/page.css'
 
 export default class Page extends React.Component {
   constructor() {
@@ -13,11 +14,11 @@ export default class Page extends React.Component {
   }
 
   componentWillMount() {
-    window.addEventListener('touchmove', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('touchmove', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {

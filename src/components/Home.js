@@ -1,11 +1,11 @@
 import React from 'react'
 import profilePic from '../images/aleks.jpg'
 import Page from './Page'
+import './styles/home.css'
 
 const Home = () => {
   return (
     <Page>
-
       <div className='bio'>
         <h1>Welcome!</h1>
         <h2>I'm so happy to meet you!</h2>
@@ -14,9 +14,8 @@ const Home = () => {
         I love to learn new things, no matter how tough, and I love to teach others. No matter how tough.
         </p>
         <h4>I hope we can make some beautiful things together</h4>
-        <img src={profilePic} className="profile bio" alt="selfImg" />
+        <img src={profilePic} id="profilePic" alt="selfImg" />
       </div>
-
     </Page>
   );
 }

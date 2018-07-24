@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Typing from 'react-typing-animation';
+import './styles/landingPage.css'
 
 
 export default class LandingPage extends React.Component {

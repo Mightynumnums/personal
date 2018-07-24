@@ -1,6 +1,7 @@
 import React from 'react'
 import { TextField, Button } from 'material-ui'
 import Page from '../components/Page.js'
+import './styles/contacts.css'
 
 
 const Contacts = () => {
