@@ -40,7 +40,7 @@ const Resume = () => {
             <div className='work-header'>
               <h4>Fullstack Academy Of Code</h4>
               <h5>Teaching Fellow</h5>
-              <h6>May 2o18 - Present</h6>
+              <h5>May 2o18 - Present</h5>
             </div>
             <p id='work-description'>
               Responsibilities include doing things with the things and then creating more things to fdo wuth more id tdhnfi,.
@@ -53,7 +53,7 @@ const Resume = () => {
             <div className='work-header'>
               <h4>Happy Bones NYC</h4>
               <h5>Manager | Barista</h5>
-              <h6>July 2o15 - January 2o18</h6>
+              <h5>July 2o15 - January 2o18</h5>
             </div>
             <p id='work-description'>
               Store manager who manged the store with the store things happening ath e store wth other tgusv.
@@ -69,7 +69,7 @@ const Resume = () => {
             <div className='work-header'>
               <h4>Ninth Street Espresso</h4>
               <h5>Manager | Barista</h5>
-              <h6>July 2o15 - January 2o18</h6>
+              <h5>July 2o15 - January 2o18</h5>
             </div>
             <p id='work-description'>
               Store manager who manged the store with the store things happening ath e store wth other tgusv.
@@ -86,8 +86,8 @@ const Resume = () => {
             <div className='skills education'>
               <div className='education-header'>
                 <h4>Grace Hopper Program at Fullstack Academy of Code</h4>
-                <h5>Fullstack JavaScript Developer</h5>
-                <h6>January 2o18 - May 2o18</h6>
+                <h6>Fullstack JavaScript Developer</h6>
+                <h5>January 2o18 - May 2o18</h5>
               </div>
             </div>
 
@@ -95,7 +95,7 @@ const Resume = () => {
               <div className='education-header' id='break'>
                 <h4>Fashion Institute of Technology</h4>
                 <h5>BFA in Illustration</h5>
-                <h6 className='spacer'>August 2oo3 - August 2oo7</h6>
+                <h5 className='spacer'>August 2oo3 - August 2oo7</h5>
               </div>
             </div>
           </div>

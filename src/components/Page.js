@@ -21,7 +21,6 @@ export default class Page extends React.Component {
   }
 
   handleScroll() {
-    console.log('butts and nuts')
     const { lastScrollY } = this.state;
     const currentScrollY = window.scrollY;
 

@@ -23,7 +23,7 @@ li {
     } 
 
 .main-content {
-  min-height: 200vh;
+  min-height: 110vh;
   position: relative;
   botton: 10vh;
   padding-bottom: 200px;
@@ -38,12 +38,24 @@ li {
   border: 2px solid transparent;
 }
 
-.bio {
+/* .bio {
+  /* position:static;
   width: 600px;
   padding: 100px 100px;
   text-align: left;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; */
+
+  .bio {
+  width: 75%;
+  padding: 20px;
+  text-align: left;
+  color: rgb(94, 91, 91);
+  display: block;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
   background-color: rgb(240, 237, 234);
 }
 
@@ -82,17 +94,12 @@ li {
   transition:ease-out, height 500ms 500ms, opacity 500ms 0ms;;
   opacity: 0.0;
   height: 0px;
-  /* display: none; */
-
 }
 
 .navigate a {
   text-decoration: none;
   color: rgb(228, 220, 220);
   margin: 2px;
-}
-
-.navigate a {
   border: 2px solid transparent;
   padding: 8px;
 }
@@ -123,6 +130,7 @@ li {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
+
 }
 
 #anbeText, #donkeText {
@@ -181,7 +189,10 @@ img {
 
 /*********************************CONTACTS-EMAIL FORM***********************************/
 #formTop {
-  margin-top: 150px;
+  width: 600px;
+  padding: 100px 100px;
+  display: block;
+  margin: 20px 40px 0 40px;
 }
 
 #contact-form {
@@ -197,13 +208,20 @@ img {
 }
 
 #formSubmitButton {
-  margin-top: 20px;
   border-style: solid;
   border-color: rgb(116, 113, 113);
   border-width: 2px;
   border-radius: 8px;
+  justify-content: center;
   width: 100px;
-  color: pink;
+  color: rgb(116, 113, 113);
+}
+
+#formSubmitButton:hover {
+  border-style: solid;
+  border-color: rgb(116, 113, 113);
+  background-color:rgb(116, 113, 113);
+  color: white;
 }
 
 
@@ -280,12 +298,15 @@ img {
      margin-top: 60px;
      position: absolute;
      font-size: 18px;
+    }
+    
+    h2.resume-tag{
+      margin-top: 0;
    }
 
-   h2.resume-tag{
-     margin-top: 0;
+   h4{
+     font-weight: 600;
    }
-
    .skills {
      display: flex;
      margin-top: 0x;
@@ -295,6 +316,7 @@ img {
      font-size: 12px;
      border-left: 2px solid black;
      text-align: left;
+    
    } 
 
    .skills ul {
@@ -363,8 +385,6 @@ img {
     color: rgb(94, 91, 91);
     display: block;
     margin-top: 190px;
-    margin-right: 0px;
-    margin-left: 0px;
     background-color: white;
   }
   .profile {
@@ -419,7 +439,7 @@ img {
 
   #donke-video {
     height: 250px;
-    width: 400px;
+    width: 380px;
   }
   
   .projLinks a {
@@ -451,6 +471,34 @@ img {
   .educationDiv {
     margin-bottom: 150px;  
   }
+
+  /*********************************CONTACTS-EMAIL FORM***********************************/
+#formTop {
+  margin-top: 250px;
+}
+
+#contact-form {
+  margin-top: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput {
+  padding-top: 40px;
+}
+
+#formSubmitButton {
+  margin-top: 20px;
+  border-style: solid;
+  border-color: rgb(116, 113, 113);
+  border-width: 2px;
+  border-radius: 8px;
+  width: 100px;
+  color: pink;
+}
+
 
 
 
