@@ -26,9 +26,6 @@ const Projects =() => {
             </div>
 
 
-
-
-
             {/* donke project*/}
             <div id='donkeDiv'>
               <p className='projDescr'>The creation of Donke was inspired by inflamed backs and asleep legs.

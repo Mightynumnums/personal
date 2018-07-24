@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar.js'
 import Footer from '../components/Footer.js'
+import Hamburger from '../components/Hamburger.js'
 import './styles/page.css'
 
 export default class Page extends React.Component {
@@ -8,9 +9,17 @@ export default class Page extends React.Component {
     super()
     this.state = {
       lastScrollY: 0,
-      hidden: false
+      hidden: false,
+      toggle: false
     }
     this.handleScroll = this.handleScroll.bind(this)
+    this.showToggleNav = this.showToggleNav.bind(this)
+  }
+
+  showToggleNav() {
+    this.setState({
+      toggle: !this.state.toggle
+    })
   }
 
   componentWillMount() {
@@ -33,14 +42,21 @@ export default class Page extends React.Component {
     }
   };
 
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-
   render() {
     return (
       <div className="main-content">
-        <Navbar hidden={this.state.hidden} />
+        <Navbar hidden={this.state.hidden} handleScroll={this.handleScroll} />
+      <div>
+    <Hamburger onClick={this.showToggleNav} toggle={this.state.toggle}/>
+        {
+          this.state.toggle 
+          ? 
+          <Navbar />
+           : 
+           null 
+          }
+      </div>
+
         {this.props.children}
         <Footer />
       </div>
