@@ -61,7 +61,7 @@
 /************************MEDIA Q********************************/
 @media all and (max-width: 600px) {
   .projects {
-    margin-top: 250px;
+    margin-top: 20px;
   }
 }
 

@@ -8,7 +8,8 @@ const Hamburger = (props) => {
 
  
   return (
-     <div>
+     <div id='hanburger'>
+     <h6 id='menu'>MENU</h6>
      <img src={hamburger} className='hamburgerIcon' alt='hamNavbar' onClick={props.onClick}/>
      </div>
   )
