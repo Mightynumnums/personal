@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import './styles/navbar.css'
 
 const Navbar = (props) => {
+  
   let className = 'navigate';
   if (props.hidden) className += ' hidden';
   if (props.collapsed) className += ' collapsed';

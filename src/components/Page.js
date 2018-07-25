@@ -15,6 +15,7 @@ export default class Page extends React.Component {
     this.handleScroll = this.handleScroll.bind(this)
     this.toggleNav = this.toggleNav.bind(this)
   }
+  
 
   toggleNav() {
     this.setState({
