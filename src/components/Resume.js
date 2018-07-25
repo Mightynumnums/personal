@@ -2,7 +2,6 @@ import React from 'react'
 import Page from '../components/Page.js'
 import './styles/resume.css'
 
-
 const Resume = () => {
   return (
     <Page>

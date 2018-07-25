@@ -10,15 +10,15 @@ export default class Page extends React.Component {
     this.state = {
       lastScrollY: 0,
       hidden: false,
-      toggle: false
+      collapsed: false
     }
     this.handleScroll = this.handleScroll.bind(this)
-    this.showToggleNav = this.showToggleNav.bind(this)
+    this.toggleNav = this.toggleNav.bind(this)
   }
 
-  showToggleNav() {
+  toggleNav() {
     this.setState({
-      toggle: !this.state.toggle
+      collapsed: !this.state.collapsed
     })
   }
 
@@ -45,22 +45,17 @@ export default class Page extends React.Component {
   render() {
     return (
       <div className="main-content">
-        <Navbar hidden={this.state.hidden} handleScroll={this.handleScroll} />
-      <div>
-    <Hamburger onClick={this.showToggleNav} toggle={this.state.toggle}/>
-        {
-          this.state.toggle 
-          ? 
-          <Navbar />
-           : 
-           null 
-          }
-      </div>
-
+        <div>
+          <Hamburger onClick={this.toggleNav} collapsed={this.state.collapsed} />
+          <Navbar
+            collapsed={this.state.collapsed}
+            hidden={this.state.hidden}
+            handleScroll={this.handleScroll}
+          />
+        </div>
         {this.props.children}
         <Footer />
       </div>
     )
   }
 }
-

@@ -14,11 +14,11 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Route exact={true} path='/' component={LandingPage}></Route>
-          <Route path='/home' component={Home}>Home</Route>
-          <Route path='/projects' component={Projects}>Projects</Route>
-          <Route path='/resume' component={Resume}>Resume</Route>
-          <Route path='/contacts' component={Contacts}>Contact</Route>
+          <Route exact={true} path='/' component={LandingPage} />
+          <Route path='/home' component={Home} />
+          <Route path='/projects' component={Projects} />
+          <Route path='/resume' component={Resume} />
+          <Route path='/contacts' component={Contacts} />
         </div>
       </Router >
     );

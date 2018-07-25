@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom'
 import './styles/navbar.css'
 
 const Navbar = (props) => {
-  console.log('NAVBAR PROPS', props)
+  let className = 'navigate';
+  if (props.hidden) className += ' hidden';
+  if (props.collapsed) className += ' collapsed';
 
-  const className = props.hidden ? 'navigate hidden' : 'navigate';
   return (
       <ul className={className} id='navbar'>
         <li id='home'><NavLink to='/home'>HOME</NavLink></li>
