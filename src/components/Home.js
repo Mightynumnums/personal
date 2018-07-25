@@ -7,14 +7,17 @@ const Home = () => {
   return (
     <Page>
       <div className='bio'>
-        <h1>Welcome!</h1>
-        <h2>I'm so happy to meet you!</h2>
-        <h3>My name is Aleks and I am a fullstack JavaScript software developer with a keen eye for design.</h3>
-        <p>I wasn’t born a natural programmer. As a matter of fact, I was born an artist. I became a programmer who enjoys solving challenges in a creative way. Art and tech, for me, is a perfect union, two elements that fulfill and compliment one another.
-        I love to learn new things, no matter how tough, and I love to teach others. No matter how tough.
-        Generally, I like to rolling up my sleeves and getting scrappy.
-        </p>
-        <h4>I hope we can make some beautiful things together to impress the world.</h4>
+      <div class='bioText'>
+          <h2>Welcome!
+          I'm so happy you made it to my site!</h2>
+          <h3>My name is Aleks and I am a fullstack  software engineer with a keen eye for design.</h3>
+          <p>I am an artist by nature and a web developer by training. Art and tech, for me, is a perfect union,- two elements that fulfill and complement one another.
+          I love to learn new things, no matter how tough, and I love to teach others (no matter how tough).
+          Generally, I like rolling up my sleeves and getting scrappy.
+          I currently live, climb, and build apps in Brooklyn, New York. 
+          </p>
+          <h4>Check out my projects or shoot me a message at the links above!</h4>
+        </div>
         <img src={profilePic} id="profilePic" alt="selfImg" />
       </div>
     </Page>
