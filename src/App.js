@@ -6,10 +6,9 @@ import Projects from './components/Projects.js'
 import Resume from './components/Resume.js'
 import Contacts from './components/Contacts.js'
 import LandingPage from './components/LandingPage'
+import NotFound from './components/NotFound'
 
-const NotFound = () => (
-  <h1>Uhoh. Looks like we couldn't find that page :(</h1>
-);
+
 
 class App extends Component {
   render() {
