@@ -4,14 +4,12 @@ import './styles/hamburger.css'
 
 
 const Hamburger = (props) => {
-  console.log('HAMBURGER PROPS', props)
 
- 
   return (
-     <div id='hanburger'>
-     <h6 id='menu'>MENU</h6>
-     <img src={hamburger} className='hamburgerIcon' alt='hamNavbar' onClick={props.onClick}/>
-     </div>
+    <div className='hamburgerIcon' onClick={props.onClick}>
+      <h6 className='menu'>MENU</h6>
+      <img src={hamburger} alt='hamNavbar' className='hamburgerIcon' />
+    </div>
   )
 }
 
