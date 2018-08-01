@@ -56,7 +56,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
  
 @media all and (max-width: 600px) {
   .collapsed {
