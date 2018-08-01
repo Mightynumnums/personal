@@ -1,8 +1,9 @@
 /**********************NAVBAR***********************/
-
-/* #home{
+ 
+#home{
   flex-grow: 1;
-} */
+  text-align: start;
+} 
 
 .navigate {
   letter-spacing: 3px;
@@ -58,6 +59,12 @@
 }
  
 @media all and (max-width: 600px) {
+
+  #home{
+    text-align: center;
+  } 
+
+
   .collapsed {
     display: none;
   }
