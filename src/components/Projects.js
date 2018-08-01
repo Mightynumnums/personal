@@ -5,22 +5,23 @@ import donke from '../images/Donke.png'
 import Page from '../components/Page.js'
 import './styles/projects.css'
 
-const Projects =() => {
+const Projects = () => {
   return (
     <Page>
       <div className="projects">
         <div id='anbePortfolio'>
-          <p className='projDescr'>Anbe Baccam is an emerging photographer. When I was building his site, really wanted to showcase his work in a simple way. It was important for me to let the beauty of his work to speak for itself, without too much destruction and noise.
+          <h2 className='projDescr name'>Anbe Baccam</h2>
+          <p className='projDescr'>Anbe Baccam is an emerging photographer. When I was building his website, I really wanted to showcase his work in a simple way. It was important to me, to let the beauty of his work to speak for itself, without too much disruption or noise.
         <br />
-            This website is the first website that I've ever built. Ituses HTML and CSS, with some small amount of JavaScript and JQuery. Working on it made me fall in love with programming. It helped me understand how my passion for design and illustration fit together with tech.
+            This website is the first that I've ever built. Ituses HTML and CSS, with some small amount of JavaScript and JQuery. Working on it made me fall in love with programming. It helped me understand how my passion for design and illustration fit together with tech.
         </p>
           <div className='images'>
-            <img src={anbeL}  alt="laptopImage" />
+            <img src={anbeL} alt="laptopImage" />
             <img src={anbeI} alt='iphoneImage' />
           </div>
           <div className='projLinks'>
-            <a  href='https://github.com/Mightynumnums/anbe2'>GITHUB</a>
-            <a  href='https://anbebaccamportfolio.herokuapp.com/'>WEBSITE</a>
+            <a href='https://github.com/Mightynumnums/anbe2'>GITHUB</a>
+            <a href='https://anbebaccamportfolio.herokuapp.com/'>WEBSITE</a>
           </div>
 
 
@@ -42,7 +43,7 @@ const Projects =() => {
               <a href='https://buddy-4f263.firebaseapp.com/'>WEBSITE</a>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </Page>
   );

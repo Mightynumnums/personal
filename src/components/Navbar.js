@@ -38,24 +38,24 @@ export default class Navbar extends React.Component {
       this.setState({ hidden: false })
     }
   }
- 
 
-render() {
-  let className = 'navigate';
-  if (this.state.hidden) className += ' hidden';
-  if (this.state.collapsed) className += ' collapsed';
 
-  return (
-    <div>
-      <Hamburger onClick={this.toggleNav} collapsed={this.state.collapsed} />
+  render() {
+    let className = 'navigate';
+    if (this.state.hidden) className += ' hidden';
+    if (this.state.collapsed) className += ' collapsed';
+
+    return (
+      <nav>
+        <Hamburger onClick={this.toggleNav} collapsed={this.state.collapsed} />
         <ul className={className} id='navbar'>
           <li id='home'><NavLink to='/home'>HOME</NavLink></li>
           <li id='projects'><NavLink to='/projects'>PROJECTS</NavLink></li>
           <li id='resume'><NavLink to='/resume'>RESUME</NavLink></li>
           <li id='contacts'><NavLink to='/contacts'>CONTACTS</NavLink></li>
         </ul>
-     </div>
-   
+      </nav>
+
     )
   }
 }

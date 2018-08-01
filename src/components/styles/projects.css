@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-.projDescr {
+.projDescr, .name {
   display: block;
   width: 75%;
   margin: 0 auto;
@@ -15,7 +15,10 @@
   text-align: left;
   color:  rgb(94, 91, 91);
   background-color: rgb(240, 237, 234);
-  
+}
+
+.name {
+  padding-bottom: 0;
 }
 
 .images img {
@@ -33,9 +36,10 @@
 }
 
 .projLinks a {
+  font-size: 1em;
   border: 2px solid transparent;
   margin-right: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 40px;
   padding: 8px;
   text-decoration: none;
