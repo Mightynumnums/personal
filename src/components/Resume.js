@@ -36,7 +36,7 @@ const Resume = () => {
         </div>
         <div className='myResume work'>
           <h2 className='resume-tag'>Work Experience</h2>
-          
+
           <div className='skills work-exp'>
             <div className='work-header'>
               <h3>Fullstack Academy Of Code</h3>
@@ -44,10 +44,11 @@ const Resume = () => {
               <h5>June 2o18 - Present</h5>
             </div>
             <ul className='work-description'>
-              <li>Helped students debug their code and answered technical questions</li>
-              <li>Conducted programming interviews for admissions</li>
+              <li>Mentored 30+ students by providing daily debugging assistance and weekly technical office hours</li>
+              <li>Conducted technical and programming interviews for prospective students</li>
               <li>Assisted in code reviews</li>
-          </ul>
+              <li>Delivered lectures on algorithms</li>
+            </ul>
           </div>
 
           <div className='skills work-exp'>
@@ -61,7 +62,7 @@ const Resume = () => {
               <li>Hired and trained staff</li>
               <li>Prepared specialty drinks</li>
               <li>Ensured 100% customer service satisfaction and superb customer service</li>
-          </ul>
+            </ul>
           </div>
 
           <div className='skills work-exp'>
@@ -75,7 +76,7 @@ const Resume = () => {
               <li>Expedited smooth and professional service</li>
               <li>Handled daily ordering and organization</li>
             </ul>
-            </div>
+          </div>
 
           <div className='myResume educationDiv'>
             <h2 className='resume-tag'>Education</h2>
