@@ -4,23 +4,22 @@
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 100px 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 10px;
 }
-
 
 .projImg {
   height: 100%;
-  width:100%;
+  width: 100%;
 }
 .container {
-  width: 100%;
-  height:100%;
+  height:auto;
+  padding: 20px;
   display: flex; 
   flex-direction: column;
   justify-content: center;
-  align-items: center;
- 
-  
+  align-items: center; 
 }
 
 .hovereffect {
@@ -93,15 +92,14 @@
 }
 
 .projLinks {
-  margin: 20px;
+  margin: 5px;
   display: flex;
   flex-direction: row;
   justify-content:center;
 }
 
 .projLinks a {
-  width: 100px;
-  margin: 30px 20px 0 10px;
+  margin: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -109,9 +107,6 @@
   justify-content: center;
   font-size: 1em;
   border: 2px solid transparent;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 40px;
   padding: 8px;
   text-decoration: none;
   background: -moz-linear-gradient(45deg, rgba(255,0,255,1) 0%, rgba(0,255,255,1) 100%); /* ff3.6+ */
@@ -138,5 +133,22 @@
   .projects {
     margin-top: 50px;
   }
+
+}
+
+@media all and (max-width: 400px) {
+ 
+.hovereffect {
+  width: 100%;
+  height: 100%; 
+  }
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+  }
+  .hovereffect p {
+   font-size: 10px;
+  
+ }
 }
 

@@ -21,7 +21,7 @@ export default [
     }
   },
   {
-    description: `Sasha Turrentine is a New York based photographer and writer, originally hauling from California. Sasha uses her lens and her writing to create hauntingly beautiful narratives that transport any observer to a place where we can be 'present' to observe in stillness. When I built Sasha's website. `,
+    description: `Sasha Turrentine is a New York based photographer and writer, originally hauling from California. Sasha uses her lens and her writing to create hauntingly beautiful narratives that transport any observer to a place where we can be 'present' to observe in stillness. This website is built using HTML5, CSS3 and JQuery.`,
     image:
     {
       alt: 'sasha turrentine portfolio',
