@@ -1,41 +1,72 @@
 /*****************************PROJECTS***************************/
 
-
-.projects {
-  margin-top: 100px; 
+.projectMain {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.projDescr, .name {
+.hover-container {
+  margin: 100px 45px;
+}
+.imageContainer {
   display: block;
-  width: 75%;
-  margin: 0 auto;
+}
+
+.imageContainer img, .overlay-content{
+ -webkit-box-shadow: 0px 1px 14px -1px rgba(54,50,54,0.99);
+ -moz-box-shadow: 0px 1px 14px -1px rgba(54,50,54,0.99);
+  box-shadow: 0px 1px 14px -1px rgba(54,50,54,0.99);
+  position: relative;
+  height: 450px;
+  width: 725px;
   padding: 20px;
-  text-align: left;
-  color:  rgb(94, 91, 91);
-  background-color: rgb(240, 237, 234);
+  display: flex;
+  align-items: center;
+  margin: auto;
+  transition: all 0.2s linear;
 }
 
-.name {
-  padding-bottom: 0;
+.overlay-content {
+ display: none;
+ position: relative;
+ padding: 30px;
+ text-align: left;
+ color: white;
 }
 
-.images img {
-  padding: 20px;
-  height: 200px;
+.hover-container:hover .overlay-content {
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  background-color: rgb(63, 58, 58);
+  /* width:700px;
+  height:400px; */
+  opacity:0.95;
+  margin: auto;
+  top:0;
+  left:0;
+  right:100%;
 }
 
-.images, .projLinks {
-  margin: 30px 20px 0 10px;
+
+
+.projLinks {
+  margin: 20px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-self: center;
-  justify-content: center;
+  justify-content:center;
 }
 
 .projLinks a {
+  width: 100px;
+  margin: 30px 20px 0 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: center;
   font-size: 1em;
   border: 2px solid transparent;
   margin-right: 20px;
@@ -54,7 +85,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.projLinks a:hover, #main {
+.projLinks a:hover {
   border: 2px solid transparent;
   border-image: linear-gradient(10deg, rgb(149, 28, 153), rgb(69, 206, 194));
   border-image-slice: 1;

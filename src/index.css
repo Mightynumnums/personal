@@ -6,8 +6,7 @@ html, body {
   font-family: 'Karla', sans-serif;
   color: rgb(94, 91, 91);
   line-height: 1.7;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
 }
 
 h4, h5 {
