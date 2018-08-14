@@ -1,56 +1,96 @@
 /*****************************PROJECTS***************************/
 
 .projectMain {
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  margin: 100px 20px;
 }
 
-.hover-container {
-  margin: 100px 45px;
-}
-.imageContainer {
-  display: block;
-}
 
-.imageContainer img, .overlay-content{
- -webkit-box-shadow: 0px 1px 14px -1px rgba(54,50,54,0.99);
- -moz-box-shadow: 0px 1px 14px -1px rgba(54,50,54,0.99);
-  box-shadow: 0px 1px 14px -1px rgba(54,50,54,0.99);
-  position: relative;
-  height: 450px;
-  width: 725px;
-  padding: 20px;
-  display: flex;
+.projImg {
+  height: 100%;
+  width:100%;
+}
+.container {
+  width: 100%;
+  height:100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: auto;
-  transition: all 0.2s linear;
+ 
+  
 }
 
-.overlay-content {
- display: none;
- position: relative;
- padding: 30px;
- text-align: left;
- color: white;
-}
-
-.hover-container:hover .overlay-content {
+.hovereffect {
+  -webkit-box-shadow: 0px 1px 14px -1px rgba(54,50,54,0.99);
+  -moz-box-shadow: 0px 1px 14px -1px rgba(54,50,54,0.99);
+  box-shadow: 0px 1px 14px -1px rgba(54,50,54,0.99);
+  width: 500px;
+  height: 300px;
+  float: left;
+  overflow: hidden;
   position: relative;
-  display: flex;
-  flex-direction:column;
-  justify-content:center;
-  background-color: rgb(63, 58, 58);
-  /* width:700px;
-  height:400px; */
-  opacity:0.95;
-  margin: auto;
-  top:0;
-  left:0;
-  right:100%;
+  text-align: center;
+  cursor: default;
 }
 
+.hovereffect .overlay {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
 
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+ .hovereffect p {
+   margin-top:0;
+   height: 100%;
+   width: auto;
+  text-align: left;
+  position: relative;
+  font-size: 14px;
+  padding: 20px 40px;
+  color: white;
+  background: rgba(34, 29, 29, 0.6);
+}
+
+  .hovereffect p {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+}
+
+.hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
 
 .projLinks {
   margin: 20px;

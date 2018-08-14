@@ -18,12 +18,11 @@ export default class Projects extends React.Component {
 
           {this.state.projects.map(project => {
             return (
-              <div className='hover-container' key={project.description}>
-                <div className='imageContainer'>
-                  <img src={project.image.src} alt={project.image.alt} />
-                </div>
-                <div className='image-hover-text-overlay'>
-                  <div className='overlay-content'>
+              <div className='container' key={project.description}>
+
+                <div className='hovereffect'>
+                  <img className='projImg' src={project.image.src} alt={project.image.alt} />
+                  <div className='overlay'>
                     <p>{project.description}</p>
                   </div>
                 </div>
@@ -31,6 +30,7 @@ export default class Projects extends React.Component {
                   <a href={project.links.ghUrl}>{project.links.github}</a>
                   <a href={project.links.webUrl}>{project.links.website}</a>
                 </div>
+
               </div>
             )
           })}
