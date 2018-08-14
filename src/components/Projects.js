@@ -27,8 +27,8 @@ export default class Projects extends React.Component {
                   </a>
                 </div>
                 <div className='container projLinks'>
-                  <a href={project.links.ghUrl}>{project.links.github}</a>
-                  <a href={project.links.webUrl}>{project.links.website}</a>
+                  <a href={project.links.ghUrl} target='_blank'>{project.links.github}</a>
+                  <a href={project.links.webUrl} target='_blank'>{project.links.website}</a>
                 </div>
               </div>
             )
