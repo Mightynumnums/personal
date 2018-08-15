@@ -9,7 +9,7 @@ export default class Navbar extends React.Component {
     this.state = {
       lastScrollY: 0,
       hidden: false,
-      collapsed: false
+      collapsed: true
     }
     this.handleScroll = this.handleScroll.bind(this)
     this.toggleNav = this.toggleNav.bind(this)
