@@ -51,10 +51,10 @@ export default [
     }
   },
   {
-    description: `Donke is a native application created using Electron paltform. It is build with React.js for front end, Redux for state managemet, Green Sock Library for animations, and FireStore for data management and real time updates.
-    Donke encourages users to take care of their wellbeing by taking consistent breaks during their work day.
-    My team and I have incorporated a playpen functionality that allows users to interact with other avitars.
-    It is a playful application that dreams to help people to be healthier, active and in tern more productive, even if they must sit behind the desk all day.`,
+    description: ` Donké is a native application created using Electron platform. It is built with React.js for the front end, Redux for state management, Green Sock Library for animations, and FireStore for data management and real-time updates.
+    Donke encourages users to take care of their wellbeing by taking consistent breaks during their workday.
+    My team and I have incorporated a playpen functionality that allows users to interact with other avatars.
+    It is a playful application that dreams to help people to be healthier, active and intern more productive, even if they must sit behind the desk all day.`,
     image:
     {
       alt: 'Donke',
